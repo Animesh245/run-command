@@ -11,3 +11,8 @@ sudo docker run -it <image_id>
 
 To run in any particular port:
 sudo docker run -p 808*:8080 image_name:version
+
+To push in any repo of dockerhub:
+sudo docker login
+sudo docker tag appName:tag hubname/repo:appName
+sudo docker push hubname/repo:appName
