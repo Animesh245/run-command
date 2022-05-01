@@ -1,0 +1,13 @@
+To build a docker image:
+
+cd folder_in_which_dockerfile_exists/
+sudo docker build -f Dockerfile -t file:version .
+
+To see list of images:
+sudo docker images OR sudo docker image ls
+
+To run any image:
+sudo docker run -it <image_id>
+
+To run in any particular port:
+sudo docker run -p 808*:8080 image_name:version
